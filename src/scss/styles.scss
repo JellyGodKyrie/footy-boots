@@ -1,11 +1,11 @@
 :root {
-  --white: ghostwhite;
-  --tan-1: #f6f6fb;
-  --tan-2: #dddee7;
-  --tan-3: #d4d1e2;
-  --tan-4: #b2aed3;
+  --white: rgb(94, 94, 98);
+  --tan-1: #b6b6e1;
+  --tan-2: #cb4242;
+  --tan-3: #a47fbe;
+  --tan-4: #cc0f0f;
   --purple: purple;
-  --text-light: #968c84;
+  --text-light: #dd6604;
   --text-dark: black;
 }
 
@@ -20,7 +20,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: var(--tan-3);
   padding: 2vmin;
   height: 100vh;
 }
@@ -85,7 +85,7 @@ code {
 }
 
 p.error-message {
-  color: var(--orange);
+  color: var(--purple);
   text-align: center;
 }
 
@@ -113,14 +113,14 @@ input {
 }
 
 input:focus {
-  border-color: var(--orange);
+  border-color: var(--purple);
 }
 
 button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--purple);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
