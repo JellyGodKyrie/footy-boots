@@ -176,7 +176,11 @@ function LoginForm(_ref) {
 function Logo() {
   return /*#__PURE__*/React.createElement("div", {
     className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].Logo
-  }, /*#__PURE__*/React.createElement("div", null, "GOAT"), /*#__PURE__*/React.createElement("div", null, "CAFE"));
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "https://app.logo.com/view/logo_afc83da8-2d0e-4169-b83e-2ffe19884101",
+    className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].image,
+    alt: "Logo"
+  }));
 }
 
 /***/ }),
@@ -234,6 +238,8 @@ function MenuListItem(_ref) {
   }, /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].emoji + ' ' + 'flex-ctr-ctr'
   }, menuItem.emoji), /*#__PURE__*/React.createElement("div", {
+    className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].brand
+  }, menuItem.brand), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].name
   }, menuItem.name), /*#__PURE__*/React.createElement("div", {
     className: _MenuListItem_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].buy
@@ -294,7 +300,7 @@ function OrderDetail(_ref) {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].right
   }, "$", order.orderTotal.toFixed(2)))) : /*#__PURE__*/React.createElement("div", {
     className: _OrderDetail_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].hungry
-  }, "Hungry?")));
+  }, "EMPTY")));
 }
 
 /***/ }),
@@ -1225,7 +1231,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.EDeinQzfS2N2rVW_Z1GP {
   color: var(--tan-1);
   font-size: 2.7vmin;
   border: 0.6vmin solid var(--tan-2);
-}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,+BAAA;EACA,mBAAA;EACA,kBAAA;EACA,kCAAA;AACJ","sourcesContent":[".Logo {\n    height: 12vmin;\n    width: 12vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 50%;\n    background-color: var(--orange);\n    color: var(--tan-1);\n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n}"],"sourceRoot":""}]);
+}
+
+.EDeinQzfS2N2rVW_Z1GP img {
+  width: 100%;
+  height: 100%;
+}`, "",{"version":3,"sources":["webpack://./src/components/Logo/Logo.module.scss"],"names":[],"mappings":"AAAA;EACI,cAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,+BAAA;EACA,mBAAA;EACA,kBAAA;EACA,kCAAA;AACJ;;AAEA;EACI,WAAA;EACA,YAAA;AACJ","sourcesContent":[".Logo {\n    height: 12vmin;\n    width: 12vmin;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border-radius: 50%;\n    background-color: var(--orange);\n    color: var(--tan-1);\n    font-size: 2.7vmin;\n    border: .6vmin solid var(--tan-2);\n}\n\n.Logo img {\n    width: 100%;\n    height: 100%;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Logo": `EDeinQzfS2N2rVW_Z1GP`
@@ -1294,12 +1305,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3vmin;
-  padding: 2vmin;
   color: var(--text-light);
   background-color: var(--white);
   border: 0.1vmin solid var(--tan-3);
   border-radius: 1vmin;
-  font-size: 4vmin;
 }
 
 .X4tFBfG4MKknHvd01CKE .GqkE12RHPdZZg1360W4p {
@@ -1322,17 +1331,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.X4tFBfG4MKknHvd01CKE {
   color: var(--text-light);
 }
 
-.X4tFBfG4MKknHvd01CKE .VR1OCl60qOXrRx1IzVEa {
-  font-size: 2vw;
+.X4tFBfG4MKknHvd01CKE .VR1OCl60qOXrRx1IzVEa .SkoE73hn3SPcuCBa5iDT {
+  font-size: 1.7vw;
   text-align: center;
   color: var(--text-light);
-}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,cAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,cAAA;EACA,kBAAA;EACA,wBAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    padding: 2vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n    font-size: 4vmin;\n  }\n  \n  .MenuListItem .emoji {\n    height: 8vw;\n    width: 8vw;\n    font-size: 4vw;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n  \n  .MenuListItem .name {\n    font-size: 2vw;\n    text-align: center;\n    color: var(--text-light);\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MenuListItem/MenuListItem.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,oBAAA;EACA,wBAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AACJ;;AAEE;EACE,WAAA;EACA,UAAA;EACA,cAAA;EACA,8BAAA;EACA,kCAAA;EACA,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,kBAAA;EACA,wBAAA;AACJ","sourcesContent":[".MenuListItem {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 3vmin;\n    color: var(--text-light);\n    background-color: var(--white);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .emoji {\n    height: 8vw;\n    width: 8vw;\n    font-size: 4vw;\n    background-color: var(--tan-1);\n    border: .1vmin solid var(--tan-3);\n    border-radius: 1vmin;\n  }\n  \n  .MenuListItem .buy {\n    display: flex;\n    flex-direction: column;\n  }\n  \n  .MenuListItem .buy span {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n  }\n  \n  .MenuListItem .name .brand {\n    font-size: 1.7vw;\n    text-align: center;\n    color: var(--text-light);\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"MenuListItem": `X4tFBfG4MKknHvd01CKE`,
 	"emoji": `GqkE12RHPdZZg1360W4p`,
 	"buy": `fO9kiPygtr0vmzsXoUxA`,
-	"name": `VR1OCl60qOXrRx1IzVEa`
+	"name": `VR1OCl60qOXrRx1IzVEa`,
+	"brand": `SkoE73hn3SPcuCBa5iDT`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1590,7 +1600,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.RygkJgZmBHTETlLP3C3i {
   text-align: center;
   color: var(--text-light);
   cursor: pointer;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,kBAAA;EACA,wBAAA;EACA,eAAA;AACJ","sourcesContent":[".AuthPage {\n    height: 100%;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n  }\n  \n  .AuthPage h3 {\n    margin-top: 4vmin;\n    text-align: center;\n    color: var(--text-light);\n    cursor: pointer;\n  }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,6BAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;AACJ;;AAGE;EACE,iBAAA;EACA,kBAAA;EACA,wBAAA;EACA,eAAA;AAAJ","sourcesContent":[".AuthPage {\n    height: 100%;\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    background-color: var(--white);\n    border-radius: 2vmin;\n  }\n\n  \n  .AuthPage h3 {\n    margin-top: 4vmin;\n    text-align: center;\n    color: var(--text-light);\n    cursor: pointer;\n  }"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AuthPage": `RygkJgZmBHTETlLP3C3i`
